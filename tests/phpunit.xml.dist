@@ -11,7 +11,7 @@
         </testsuite>
     </testsuites>
     <listeners>
-        <listener class="\Yandex\Tests\TestListener" />
+        <listener class="\YandexOAuth\Tests\TestListener" />
     </listeners>
     <filter>
         <whitelist>
