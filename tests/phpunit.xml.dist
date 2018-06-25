@@ -1,0 +1,26 @@
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         stopOnFailure="false"
+         colors="true"
+         verbose="true"
+         bootstrap="./bootstrap.php">
+    <testsuites>
+        <testsuite name="Library Test Suite">
+            <directory>./YandexOAuth/Tests/Common</directory>
+            <directory>./YandexOAuth/Tests/OAuth</directory>
+        </testsuite>
+    </testsuites>
+    <listeners>
+        <listener class="\Yandex\Tests\TestListener" />
+    </listeners>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../src</directory>
+        </whitelist>
+        <blacklist>
+            <directory suffix=".php">../docs</directory>
+            <directory suffix=".php">../examples</directory>
+            <directory suffix=".php">../vendor</directory>
+        </blacklist>
+    </filter>
+</phpunit>

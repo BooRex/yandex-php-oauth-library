@@ -1,0 +1,29 @@
+{
+    "name": "boorex/yandex-php-oauth-library",
+    "description": "OAuth PHP library form Yandex API",
+    "keywords":["yandex","sdk", "oauth"],
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "satooshi/php-coveralls": "~1.0",
+        "squizlabs/php_codesniffer": "~2.0",
+        "predis/predis": "^1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "YandexOAuth\\": "src/",
+            "YandexOAuth\\Tests": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "NIX Solutions Ltd",
+            "email": "github@nixsolutions.com"
+        }
+    ]
+}
